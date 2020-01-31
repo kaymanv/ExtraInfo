@@ -1,0 +1,9 @@
+name "Extra Info"
+
+extract to $temp
+
+run "ExtraInfo\Installer.ms"
+drop "ExtraInfo\Installer.ms"
+
+clear temp on MAX exit
+clear temp on reset
