@@ -28,9 +28,9 @@ rollout EIinstaller_RO "Extra Info Installer" Width:350 height:200
 	
 	fn InstallFiles =
 	(
-		dirTemp = ((getdir #temp) + @"\" + "Extra Info" + @"\")
-		copyScriptsFolder = ("xcopy " + "\"" + dirTemp + "Scripts" + "\"" + " " + "\"" + (getDir #userscripts) + @"\" + "\""  + " /E")
-		copyIconsFolder = ("xcopy " + "\"" + dirTemp + @"UI_ln\Icons" + "\"" + " " + "\"" + (getDir #usericons) + @"\" + "\""  + " /E")
+		tempDir = ((getdir #temp) + @"\" + "Extra Info" + @"\" )
+		copyScriptsFolder = ("xcopy " + "\"" + tempDir + "Scripts" + "\"" + " " + "\"" + (getDir #userscripts) + @"\" + "\""  + " /E")
+		copyIconsFolder = ("xcopy " + "\"" + tempDir + @"UI_ln\Icons" + "\"" + " " + "\"" + (getDir #usericons) + @"\" + "\""  + " /E")
 		
 		HiddenDOSCommand copyScriptsFolder
 		HiddenDOSCommand copyIconsFolder
