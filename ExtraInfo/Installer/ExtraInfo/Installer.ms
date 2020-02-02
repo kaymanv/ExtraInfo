@@ -24,13 +24,15 @@ rollout EIinstaller_RO "Extra Info Installer" Width:350 height:200
 		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_16a.bmp") + "\"")
 		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_24a.bmp") + "\"")
 		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_24i.bmp") + "\"")
+		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_16i.bmp") + "\"")
 	)
 	
 	fn InstallFiles =
 	(
 		tempDir = ((getdir #temp) + @"\" + "ExtraInfo" + @"\" )
-		copyScriptsFolder = ("xcopy " + "\"" + tempDir + "Scripts" + "\"" + " " + "\"" + (getDir #userscripts) + @"\" + "\""  + " /E")
-		copyIconsFolder = ("xcopy " + "\"" + tempDir + @"UI_ln\Icons" + "\"" + " " + "\"" + (getDir #usericons) + @"\" + "\""  + " /E")
+		
+		copyScriptsFolder = ("xcopy " + "\"" + tempDir + "Scripts" + "\"" + " " + "\"" + (getDir #userscripts) + @"\" /*+  "\"" */  + " /E")
+		copyIconsFolder = ("xcopy " + "\"" + tempDir + @"UI_ln\Icons" + "\"" + " " + "\"" + (getDir #usericons) + @"\" /*+ "\""*/  + " /E")
 		
 		HiddenDOSCommand copyScriptsFolder
 		HiddenDOSCommand copyIconsFolder
