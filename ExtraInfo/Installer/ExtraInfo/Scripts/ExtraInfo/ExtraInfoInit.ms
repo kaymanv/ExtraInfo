@@ -1,2 +1,2 @@
-filein ((getDir #userscripts) + "\ExtraInfo\includes\ExtraInfo.mse")
+filein ((getDir #userscripts) + "\ExtraInfo\Includes\ExtraInfo.mse")
 print "Extra Info Initalized"

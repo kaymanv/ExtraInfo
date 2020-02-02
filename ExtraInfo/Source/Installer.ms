@@ -19,7 +19,7 @@ rollout EIinstaller_RO "Extra Info Installer" Width:350 height:200
 	
 	fn RemoveFiles =
 	(
-		hiddenDOSCommand ("rmdir /s /q \"" + ((getDir #userscripts) + @"\Extra Info\") + "\"")
+		hiddenDOSCommand ("rmdir /s /q \"" + ((getDir #userscripts) + @"\ExtraInfo\") + "\"")
 		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_16i.bmp") + "\"")
 		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_16a.bmp") + "\"")
 		hiddenDOSCommand ("del \"" +(( getdir #usericons ) + @"\ExtraInfoLogo_24a.bmp") + "\"")
@@ -28,7 +28,7 @@ rollout EIinstaller_RO "Extra Info Installer" Width:350 height:200
 	
 	fn InstallFiles =
 	(
-		tempDir = ((getdir #temp) + @"\" + "Extra Info" + @"\" )
+		tempDir = ((getdir #temp) + @"\" + "ExtraInfo" + @"\" )
 		copyScriptsFolder = ("xcopy " + "\"" + tempDir + "Scripts" + "\"" + " " + "\"" + (getDir #userscripts) + @"\" + "\""  + " /E")
 		copyIconsFolder = ("xcopy " + "\"" + tempDir + @"UI_ln\Icons" + "\"" + " " + "\"" + (getDir #usericons) + @"\" + "\""  + " /E")
 		
