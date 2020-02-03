@@ -26,4 +26,15 @@ Send me an email with your problem or bug at this email address:
 
 volbedakay@gmail.com
 
-![](Logo/ExtraInfoLogo.png)
+## Images
+![](Images/ExtraInfoLogo_Small.png)
+
+![](Images/UI.PNG)
+
+![](Images/ObjectName.PNG)
+
+![](Images/ObjectPos.PNG)
+
+![](Images/VertexID.PNG)
+
+![](Images/VertexPos.PNG)
