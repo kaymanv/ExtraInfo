@@ -25,3 +25,5 @@ Quick!
 Send me an email with your problem or bug at this email address:
 
 volbedakay@gmail.com
+
+![](Logo/ExtraInfoLogo.png)
